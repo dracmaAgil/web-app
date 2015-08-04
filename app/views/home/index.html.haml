@@ -8,9 +8,9 @@
     - @product_servers.each do | product_server |
       .row.product_server
         .medium-3.columns
-          = link_to '#', class: 'th', title: product_server.name do
-            = image_tag('../images/maquina')
+          = link_to '#', class: 'th', title: product_server[:name] do
+            ='link'
         .medium-9.columns
-          %strong= product_server.name
-          %p= product_server.address
+          %strong= product_server[:name]
+          %p= product_server[:address]
 

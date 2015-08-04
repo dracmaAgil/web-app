@@ -26,7 +26,5 @@ class HomeController < ApplicationController
   end
 
   def product_server_detail
-
   end
-
 end
