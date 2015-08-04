@@ -8,9 +8,8 @@
     - @product_servers.each do | product_server |
       .row.product_server
         .medium-3.columns
-          = link_to '#', class: 'th', title: product_server[:name] do
-            = image_tag("default.png")
+          = link_to home_product_server_detail_path, class: 'th', title: product_server[:name] do
+            = image_tag(product_server[:image], height: 70, width: 70)
         .medium-9.columns
           %strong= product_server[:name]
           %p= product_server[:address]
-
