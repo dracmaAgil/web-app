@@ -1,0 +1,15 @@
+.row
+  .small-11.small-centered.columns
+    .icon
+  .small-11.small-centered.columns
+    .banner
+  .small-11.small-centered.columns
+    %p
+      Have any idea? feedback@nimanic.com
+  .small-11.small-centered.columns
+    - @products.each do | product |
+      .row.product_server
+        .medium-6.medium-push-6.columns
+          = link_to '#', class: 'th', title: product.name do
+            = image_tag(product.image)
+        
