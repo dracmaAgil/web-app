@@ -9,7 +9,7 @@
       .row.product_server
         .medium-3.columns
           = link_to '#', class: 'th', title: product_server[:name] do
-            ='link'
+            = image_tag("default.png")
         .medium-9.columns
           %strong= product_server[:name]
           %p= product_server[:address]
