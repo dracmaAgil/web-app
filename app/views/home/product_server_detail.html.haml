@@ -1,7 +1,7 @@
 .row
-  .small-11.small-centered.columns
+  .small-12.columns
     .icon
-  .small-11.small-centered.columns
+  .small-12.columns
     .blue_banner
       .medium-3.columns
         = image_tag('vending_1.jpg', height: 70, width: 70)
@@ -16,15 +16,15 @@
           %div
             report
 
-  .small-11.small-centered.columns
+  .small-12.columns
     %p
       Have any idea? feedback@nimanic.com
-  .small-11.small-centered.columns
+  .small-12.columns
     - @products.each do | product |
-      .row.product_server
+      .row
         .medium-6.medium-push-6.columns
           = link_to '#', class: 'th', title: product[:name] do
             = image_tag(product[:image], height: 450, width: 450)
           %br/
-          %strong= product[:price]
+          %strong.product_server= product[:price]
         
