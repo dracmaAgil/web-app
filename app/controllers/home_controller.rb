@@ -1,29 +1,29 @@
 class HomeController < ApplicationController
   def index
-    @product_servers = 
+    @product_servers =
       [
         {
           id: 1,
-          name: 'prueba 1',
-          address: 'avenida siempre viva #140, colonia amanecer, ciudad de México',
+          name: '@prueba_1',
+          address: 'Avenida siempre viva #140, colonia amanecer, ciudad de México',
           image: 'vending_1.jpg'
         },
         {
           id: 2,
-          name: 'prueba 2',
-          address: 'calle san jorge #220, colonia santos martires, ciudad de México',
+          name: '@prueba_2',
+          address: 'Calle san jorge #220, colonia santos martires, ciudad de México',
           image: 'vending_2.jpg'
         },
         {
           id: 3,
-          name: 'prueba 3',
-          address: 'avenida lagartos #9368, colonia lagunilla, ciudad de México',
+          name: '@prueba_3',
+          address: 'Avenida lagartos #9368, colonia lagunilla, ciudad de México',
           image: 'vending_3.jpg'
         },
         {
           id: 4,
-          name: 'prueba 4',
-          address: 'avenida Homero #38, colonia polanco, ciudad de México',
+          name: '@prueba_4',
+          address: 'Avenida Homero #38, colonia polanco, ciudad de México',
           image: 'default.png'
         }
       ]

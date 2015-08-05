@@ -2,7 +2,20 @@
   .small-11.small-centered.columns
     .icon
   .small-11.small-centered.columns
-    .banner
+    .blue_banner
+      .medium-3.columns
+        = image_tag('vending_1.jpg', height: 70, width: 70)
+      .medium-9.columns
+        %strong
+          @prueba_1
+        %p
+          Avenida siempre viva #140, colonia amanecer, ciudad de México
+        %div
+          %div
+            suggest
+          %div
+            report
+
   .small-11.small-centered.columns
     %p
       Have any idea? feedback@nimanic.com
@@ -10,6 +23,8 @@
     - @products.each do | product |
       .row.product_server
         .medium-6.medium-push-6.columns
-          = link_to '#', class: 'th', title: product.name do
-            = image_tag(product.image)
+          = link_to '#', class: 'th', title: product[:name] do
+            = image_tag(product[:image], height: 450, width: 450)
+          %br/
+          %strong= product[:price]
         
